@@ -59,3 +59,9 @@ Colin Watson.
 
 CycleStreets contacts details:
 https://www.cyclestreets.org/contacts/
+
+## Automated debug builds
+
+Debug APKs are attached to [GitHub Releases](https://github.com/cyclestreets/android/releases). Default-branch builds are prereleases; version-tag builds are regular releases. Each build uses a temporary CI debug signing key, so installing a newer build may require uninstalling the previous one.
+
+These are debug builds; the existing Play Store release channel remains separate.
