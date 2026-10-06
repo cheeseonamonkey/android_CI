@@ -60,8 +60,6 @@ Colin Watson.
 CycleStreets contacts details:
 https://www.cyclestreets.org/contacts/
 
-## Automated debug builds
+## Automated APK builds
 
-Debug APKs are attached to [GitHub Releases](https://github.com/cyclestreets/android/releases). Default-branch builds are prereleases; version-tag builds are regular releases. Each build uses a temporary CI debug signing key, so installing a newer build may require uninstalling the previous one.
-
-These are debug builds; the existing Play Store release channel remains separate.
+This fork attaches debug and test-signed release APKs to [GitHub prereleases](https://github.com/cheeseonamonkey/android_CI/releases). The release variant uses the repository's public dummy signing key. It can update another build signed with that same key, but the key is public and provides no publisher authentication. Neither APK can update the Play Store app; keep the Play Store release channel separate.
