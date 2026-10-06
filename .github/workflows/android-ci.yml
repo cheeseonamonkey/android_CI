@@ -68,7 +68,7 @@ jobs:
             if gh release view "$tag" >/dev/null 2>&1; then
               gh release upload "$tag" "${apks[@]}" --clobber
             else
-              gh release create "$tag" "${apks[@]}" --verify-tag --generate-notes
+              gh release create "$tag" "${apks[@]}" --verify-tag --generate-notes --prerelease
             fi
           else
             short_sha="${GITHUB_SHA:0:12}"
