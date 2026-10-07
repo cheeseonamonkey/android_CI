@@ -103,5 +103,5 @@ jobs:
           else
             short_sha="${GITHUB_SHA:0:12}"
             tag="ci-${short_sha}"
-            gh release create "$tag" "${apks[@]}" --target "$GITHUB_SHA" --prerelease --title "CI build ${short_sha}" --notes "Automated debug APK for commit ${GITHUB_SHA}."
+            gh release create "$tag" "${apks[@]}" --target "$GITHUB_SHA" --prerelease --title "CI build ${short_sha}" --notes "Automated Android APKs for commit ${GITHUB_SHA}."
           fi
